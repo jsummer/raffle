@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+  <div class="raffle">
+    <ul>
+      <li class="sector sector1">
+        <span>一等奖</span>
+      </li>
+      <li class="sector sector2">
+        <span>二等奖</span>
+      </li>
+      <li class="sector sector3">
+        <span>三等奖</span>
+      </li>
+      <li class="sector sector4">
+        <span>四等奖</span>
+      </li>
+      <li class="sector sector5">
+        <span>五等奖</span>
+      </li>
+      <li class="sector sector6">
+        <span>六等奖</span>
+      </li>
+    </ul>
+
+    <div class="raffle-btn">
+      <button>
+
+      </button>
+      <i class="arrow"></i>
+    </div>
+  </div>
+  <div class="door">
+    <div class="doorl">
+   <div class="doork-nob">
+     <div class="doorknob"></div>
+   </div>
+    
+  </div>
+  <div class="doorr">
+   <div class="doork-nob">
+     <div class="doorknob"></div>
+   </div>
+    
+  </div>
+  </div>
+  
+  
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/raffle.js"></script>
+  <script>
+    var settings = [{
+      'name': '谢谢参与',
+      'probability': '39'
+                      }, {
+      'name': '一等奖',
+      'probability': '1'
+      }, {
+      'name': '二等奖',
+      'probability': '10'
+                      }, {
+      'name': '三等奖',
+      'probability': '50'
+                      }, {
+      'name': '四等奖',
+      'probability': '50'
+                      }];
+    //      'sector1': {
+    //        
+    //      },
+    //      'sector2': {
+    //        'name': '二等奖',
+    //        'probability': '0.1'
+    //      },
+    //      'sector3':{
+    //        'name':'三等奖',
+    //        'probability':'0.5'
+    //      },
+    //      'sector0':{
+    //        'name':'谢谢参与',
+    //        'probability':'0.39'
+    //      }
+
+    var test = new Raffle(settings);
+  </script>
+</body>
+
+</html>
